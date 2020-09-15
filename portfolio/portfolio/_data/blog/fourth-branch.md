@@ -7,6 +7,8 @@ thumbnail: /assets/fourth-branch.png
 metaDescription: The Fourth Branch summarizes bills being debated in Congress and allows users to vote on the summaries. After the users vote they can compare their votes to their Congressmen to see how often they are accurately represented.
 ---
 
+<h1>The Fourth Branch</h1>
+
 What is The Fourth Branch?
 
 The Fourth Branch summarizes bills being debated in Congress, allows users to vote on the summaries, and compare their votes to their Congressmen.
