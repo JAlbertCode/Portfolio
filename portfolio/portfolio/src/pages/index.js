@@ -1,6 +1,6 @@
 import React from "react"
-import Helmet from 'react-helmet';
-import { graphql } from 'gatsby'
+import Helmet from "react-helmet"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import PostLink from "../components/post-link"
 import HeroHeader from "../components/heroHeader"
@@ -8,10 +8,9 @@ import HeroHeader from "../components/heroHeader"
 const IndexPage = ({
   data: {
     site,
-    allMarkdownRemark: { edges },
-  },
+    allMarkdownRemark: { edges }
+  }
 }) => {
-
   const Posts = edges
     .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
     .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
@@ -22,11 +21,9 @@ const IndexPage = ({
         <title>{site.siteMetadata.title}</title>
         <meta name="description" content={site.siteMetadata.description} />
       </Helmet>
-      <HeroHeader/>
-      <h2>Blog Posts &darr;</h2>
-      <div className="grids">
-        {Posts}
-      </div>
+      <HeroHeader />
+      <h2>Projects &darr;</h2>
+      <div className="grids">{Posts}</div>
     </Layout>
   )
 }
