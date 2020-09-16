@@ -3,7 +3,7 @@ template: BlogPost
 path: /customizable-phone-case
 date: 2014-07-01T06:15:50.738Z
 title: Customizable Phone Case
-thumbnail: /assets/phone-case.jpg
+thumbnail: /assets/phone-cases.jpg
 metaDescription: In the early 2010s, the iPhone had a small battery and owners were seeking to protect their phones while customizing the look. The customizable phone case sought to provide a dynamic look and improved battery life for iPhones.
 ---
 
