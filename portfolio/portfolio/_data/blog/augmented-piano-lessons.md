@@ -3,7 +3,7 @@ template: BlogPost
 path: /augmented-piano-lessons
 date: 2017-12-01T06:15:50.738Z
 title: Augmented Piano Lessons
-thumbnail: /assets/augmented-piano-lessons.jpg
+thumbnail: /assets/augmented-piano-lessons.png
 metaDescription: The future of learning how to play music will involve projections that augment the instrument to gamify the learning process.
 ---
 
