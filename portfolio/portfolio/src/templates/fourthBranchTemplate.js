@@ -8,7 +8,7 @@ export default function fourthBranchTemplate({
 }) {
   const { site, markdownRemark } = data // data.markdownRemark holds your post data
   const { siteMetadata } = site
-  const { frontmatter, html } = markdownRemark
+  const { frontmatter } = markdownRemark
   return (
     <Layout>
       <Helmet>

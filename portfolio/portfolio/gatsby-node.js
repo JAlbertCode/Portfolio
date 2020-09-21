@@ -4,6 +4,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
   const blogPostTemplate = path.resolve(`src/templates/blogTemplate.js`)
+  const fourthBranchTemplate = path.resolve(
+    `src/templates/fourthBranchTemplate.js`
+  )
 
   const result = await graphql(`
     {
@@ -30,10 +33,18 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    createPage({
-      path: node.frontmatter.path,
-      component: blogPostTemplate,
-      context: {}, // additional data can be passed via context
-    })
+    if (node.frontmatter.path === "/fourth-branch") {
+      createPage({
+        path: node.frontmatter.path,
+        component: fourthBranchTemplate,
+        context: {} // additional data can be passed via context
+      })
+    } else {
+      createPage({
+        path: node.frontmatter.path,
+        component: blogPostTemplate,
+        context: {} // additional data can be passed via context
+      })
+    }
   })
 }

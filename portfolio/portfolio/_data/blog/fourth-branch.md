@@ -1,6 +1,7 @@
 ---
-template: BlogPost
+template: fourthBranch
 path: /fourth-branch
+posttype: fourthBranch
 date: 2017-01-01T06:15:50.738Z
 title: The Fourth Branch
 thumbnail: /assets/fourth-branch.png
