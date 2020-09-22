@@ -15,7 +15,7 @@ Augmented Reality presents an opportunity to revolutionize the way we learn how 
 <video src="/assets/future-rock-band.mp4" width="100%" height="100%" autoplay controls>
 </div>
 
-<h1>That is cool but what does that have to do with Jonathan?</h1>
+<h1 class="heading">That is cool but what does that have to do with Jonathan?</h1>
 
 During a course on project management for Computer Information Systems, I decided to challenge myself by playing the role of the developer creating a proof of concept of augmented piano lessons. I chose the piano because it is a significant segment of the musical instrument market and the instrument I am most familiar with. To avoid expenses I decided the proof of concept would be triggered by an image target that would be similar to a piano. Once the image is recognized, the software would play a stream of notes that a user could hit to a familiar tune. The following is a recording of the proof of concept running on my desktop and using my phone for the image target.
 
