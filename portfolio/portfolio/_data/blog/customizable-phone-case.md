@@ -13,4 +13,6 @@ The iPhone case our team sought to design would place a screen on the back of an
 
 The dimensions for the inner casing were taken from Apple's website. The extension at the bottom of the case would contain the chip to control the screen on the back of the phone. The screen is protected by a transparent shell.
 
-<img src="/assets/phone-case.gif" width="100%" height="100%"/>
+<div class="center">
+<video src="/assets/phone-case.mp4" width="50%" height="50%" autoplay muted loop>
+</div>

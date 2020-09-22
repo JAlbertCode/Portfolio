@@ -397,3 +397,14 @@ body.light {
   top: 8px;
   left: 2px;
 }
+
+.center {
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+  // position: absolute;
+  // display: flex;
+}
