@@ -7,6 +7,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const fourthBranchTemplate = path.resolve(
     `src/templates/fourthBranchTemplate.js`
   )
+  const memorialWebsiteTemplate = path.resolve(
+    `src/templates/memorialWebsiteTemplate.js`
+  )
 
   const result = await graphql(`
     {
@@ -37,6 +40,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       createPage({
         path: node.frontmatter.path,
         component: fourthBranchTemplate,
+        context: {} // additional data can be passed via context
+      })
+    } else if (node.frontmatter.path === "/memorial-website") {
+      createPage({
+        path: node.frontmatter.path,
+        component: memorialWebsiteTemplate,
         context: {} // additional data can be passed via context
       })
     } else {
