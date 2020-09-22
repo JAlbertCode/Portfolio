@@ -10,6 +10,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const memorialWebsiteTemplate = path.resolve(
     `src/templates/memorialWebsiteTemplate.js`
   )
+  const trafficJamVrTemplate = path.resolve(
+    `src/templates/trafficJamVrTemplate.js`
+  )
 
   const result = await graphql(`
     {
@@ -46,6 +49,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       createPage({
         path: node.frontmatter.path,
         component: memorialWebsiteTemplate,
+        context: {} // additional data can be passed via context
+      })
+    } else if (node.frontmatter.path === "/traffic-jam-vr") {
+      createPage({
+        path: node.frontmatter.path,
+        component: trafficJamVrTemplate,
         context: {} // additional data can be passed via context
       })
     } else {
