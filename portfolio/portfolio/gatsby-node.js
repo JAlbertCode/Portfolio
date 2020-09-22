@@ -13,6 +13,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const trafficJamVrTemplate = path.resolve(
     `src/templates/trafficJamVrTemplate.js`
   )
+  // const augmentedPianoLessonsTemplate = path.resolve(
+  //   `src/templates/augmentedPianoLessonsTemplate.js`
+  // )
 
   const result = await graphql(`
     {
@@ -57,7 +60,15 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         component: trafficJamVrTemplate,
         context: {} // additional data can be passed via context
       })
-    } else {
+    }
+    // else if (node.frontmatter.path === "/augmented-piano-lessons") {
+    //   createPage({
+    //     path: node.frontmatter.path,
+    //     component: augmentedPianoLessonsTemplate,
+    //     context: {} // additional data can be passed via context
+    //   })
+    // }
+    else {
       createPage({
         path: node.frontmatter.path,
         component: blogPostTemplate,

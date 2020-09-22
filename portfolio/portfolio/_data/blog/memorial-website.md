@@ -7,6 +7,3 @@ thumbnail: /assets/memorial-website.jpg
 metaDescription: There are many ways to remember a lost relative and with modern technology, we can immortalize their experiences.
 layout: doctoc
 ---
-
-<Button to='https://jonathanalbert0115.wixsite.com/ferlesmemorial' target='_blank' className="button -primary"> Visit the Website </Button>
-<a href='https://jonathanalbert0115.wixsite.com/ferlesmemorial' target='_blank' className="button -primary"> Visit the Website </a>
