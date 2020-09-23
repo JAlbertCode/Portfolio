@@ -23,6 +23,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   )
   const liveInTemplate = path.resolve(`src/templates/liveInTemplate.js`)
   const wixTemplate = path.resolve(`src/templates/wixTemplate.js`)
+  const gracePotterTemplate = path.resolve(
+    `src/templates/gracePotterTemplate.js`
+  )
 
   const result = await graphql(`
     {
@@ -59,6 +62,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       createPage({
         path: node.frontmatter.path,
         component: memorialWebsiteTemplate,
+        context: {} // additional data can be passed via context
+      })
+    } else if (node.frontmatter.path === "/grace-potter") {
+      createPage({
+        path: node.frontmatter.path,
+        component: gracePotterTemplate,
         context: {} // additional data can be passed via context
       })
     } else if (node.frontmatter.path === "/livein") {
