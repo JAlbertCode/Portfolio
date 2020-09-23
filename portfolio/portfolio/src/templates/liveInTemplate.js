@@ -3,7 +3,7 @@ import Helmet from "react-helmet"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 
-export default function fourthBranchTemplate({
+export default function liveInTemplate({
   data // this prop will be injected by the GraphQL query below.
 }) {
   const { site, markdownRemark } = data // data.markdownRemark holds your post data
@@ -35,32 +35,41 @@ export default function fourthBranchTemplate({
             </div>
           )}
           <div className="blog-post-content">
-            <h1 className="heading">What is The Fourth Branch?</h1>
+            <h1>LiveIn Vision</h1>
 
             <p>
-              The Fourth Branch summarizes bills being debated in Congress,
-              allows users to vote on the summaries, and compare their votes to
-              their Congressmen.
+              LIVEIN sought to allow real estate buyers and renters to discover
+              available units within a building by scanning the facade of the
+              building using their smartphone. Potential clients would then be
+              offered augmented reality tours and an opportunity to book a
+              viewing via mobile application. Once a client finds a property
+              that suits their needs, they would be able to make an offer and
+              come to an agreement with the owner via the app, eliminating the
+              need for a broker and reducing the cost to transact.
             </p>
 
-            <h2 className="heading">Business Overview</h2>
-
-            <p>
-              I put together this presentation in the Fall of 2016 in
-              preparation for a round of fundraising. The presentation
-              identifies the need for the platform, a preview of some
-              functionality, the team makeup, the market, revenue streams and a
-              two-year marketing plan for the 2018 election.
-            </p>
-            <p>-----------Placeholder-----------</p>
-
-            <h2 className="heading"> Demo</h2>
-            <p>
-              The video below is a demo I recorded of the final product for
-              desktops.
-            </p>
-
-            <video src="/assets/the-fourth-branch-review.mp4" controls />
+            {/* <p>Choosing a place to live is much more than choosing a
+place where you will sleep. It’s about the schools you and
+your kids will learn in, the parks you will play in, the shops
+you will browse in, the bars you will drink in, the
+restaurants you will eat in; it’s about the place you will
+LIVEIN!</p> */}
+            <a
+              href="https://www.instagram.com/liveinar/"
+              target="_blank"
+              className="button -primary"
+              rel="noopener noreferrer"
+            >
+              Instagram &rarr;
+            </a>
+            <a
+              href="https://www.facebook.com/liveinar/"
+              target="_blank"
+              className="button -primary"
+              rel="noopener noreferrer"
+            >
+              Facebook &rarr;
+            </a>
           </div>
         </article>
       </div>

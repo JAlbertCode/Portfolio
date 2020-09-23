@@ -415,3 +415,24 @@ body.light {
 .heading {
   margin-top: 36px;
 }
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.margin {
+  margin-left: 5%;
+  margin-right: 5%;
+  z-index: 1;
+}
+
+.thoughtPhone {
+  display: inline;
+  z-index: 2;
+}

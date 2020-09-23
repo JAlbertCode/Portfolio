@@ -3,7 +3,7 @@ import Helmet from "react-helmet"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 
-export default function fourthBranchTemplate({
+export default function thoughtCardTemplate({
   data // this prop will be injected by the GraphQL query below.
 }) {
   const { site, markdownRemark } = data // data.markdownRemark holds your post data
@@ -35,32 +35,43 @@ export default function fourthBranchTemplate({
             </div>
           )}
           <div className="blog-post-content">
-            <h1 className="heading">What is The Fourth Branch?</h1>
+            <div className="row margin">
+              <div className="column">
+                <h1>Augmented Business Card</h1>
 
-            <p>
-              The Fourth Branch summarizes bills being debated in Congress,
-              allows users to vote on the summaries, and compare their votes to
-              their Congressmen.
-            </p>
+                <p>
+                  After sharing some Augmented Reality ideas with a friend, he
+                  requested that I augment his business card. Over several years
+                  he compiled quotes that he felt moved by and wanted to share
+                  the quotes with the people who had his business card. He
+                  called the idea a "Thought Card".
+                </p>
 
-            <h2 className="heading">Business Overview</h2>
-
-            <p>
-              I put together this presentation in the Fall of 2016 in
-              preparation for a round of fundraising. The presentation
-              identifies the need for the platform, a preview of some
-              functionality, the team makeup, the market, revenue streams and a
-              two-year marketing plan for the 2018 election.
-            </p>
-            <p>-----------Placeholder-----------</p>
-
-            <h2 className="heading"> Demo</h2>
-            <p>
-              The video below is a demo I recorded of the final product for
-              desktops.
-            </p>
-
-            <video src="/assets/the-fourth-branch-review.mp4" controls />
+                <p>
+                  After a couple of weeks, I was able to include the quotes
+                  using an image target and I decided to include a virtual
+                  button that would link viewers to a store where they could
+                  purchase the book. The links can be swapped out for affiliated
+                  marketing links, allowing the card owner to profit from
+                  viewers who bought the book.
+                </p>
+              </div>
+              {/* <img
+                src="/assets/pixel.png"
+                className="thoughtPhone"
+                width="60%"
+                height="60%"
+                display="inline"
+              /> */}
+              <video
+                src="/assets/thought-card.mp4"
+                width="40%"
+                height="40%"
+                autoplay
+                controls
+                className="margin"
+              />
+            </div>
           </div>
         </article>
       </div>

@@ -18,6 +18,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   //   `src/templates/augmentedPianoLessonsTemplate.js`
   // )
   const blottoTemplate = path.resolve(`src/templates/blottoTemplate.js`)
+  const thoughtCardTemplate = path.resolve(
+    `src/templates/thoughtCardTemplate.js`
+  )
+  const liveInTemplate = path.resolve(`src/templates/liveInTemplate.js`)
 
   const result = await graphql(`
     {
@@ -56,6 +60,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         component: memorialWebsiteTemplate,
         context: {} // additional data can be passed via context
       })
+    } else if (node.frontmatter.path === "/livein") {
+      createPage({
+        path: node.frontmatter.path,
+        component: liveInTemplate,
+        context: {} // additional data can be passed via context
+      })
     } else if (node.frontmatter.path === "/traffic-jam-vr") {
       createPage({
         path: node.frontmatter.path,
@@ -74,6 +84,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       createPage({
         path: node.frontmatter.path,
         component: blottoTemplate,
+        context: {} // additional data can be passed via context
+      })
+    } else if (node.frontmatter.path === "/thought-card") {
+      createPage({
+        path: node.frontmatter.path,
+        component: thoughtCardTemplate,
         context: {} // additional data can be passed via context
       })
     } else {
