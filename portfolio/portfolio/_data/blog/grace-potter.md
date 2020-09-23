@@ -8,3 +8,4 @@ metaDescription: An ecommerce website selling hand made pottery
 ---
 
 <h1>Grace Potter</h1>
+<p>Grace Potter </p>

@@ -22,6 +22,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     `src/templates/thoughtCardTemplate.js`
   )
   const liveInTemplate = path.resolve(`src/templates/liveInTemplate.js`)
+  const wixTemplate = path.resolve(`src/templates/wixTemplate.js`)
 
   const result = await graphql(`
     {
@@ -90,6 +91,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       createPage({
         path: node.frontmatter.path,
         component: thoughtCardTemplate,
+        context: {} // additional data can be passed via context
+      })
+    } else if (node.frontmatter.path === "/wix") {
+      createPage({
+        path: node.frontmatter.path,
+        component: wixTemplate,
         context: {} // additional data can be passed via context
       })
     } else {

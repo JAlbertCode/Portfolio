@@ -43,7 +43,7 @@ export default function fourthBranchTemplate({
               their Congressmen.
             </p>
 
-            <h2 className="heading">Business Overview</h2>
+            {/* <h2 className="heading">Business Overview</h2>
 
             <p>
               I put together this presentation in the Fall of 2016 in
@@ -52,7 +52,7 @@ export default function fourthBranchTemplate({
               functionality, the team makeup, the market, revenue streams and a
               two-year marketing plan for the 2018 election.
             </p>
-            <p>-----------Placeholder-----------</p>
+            <p>-----------Placeholder-----------</p> */}
 
             <h2 className="heading"> Demo</h2>
             <p>

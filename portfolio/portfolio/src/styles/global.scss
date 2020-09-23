@@ -119,6 +119,7 @@ a {
 .button {
   padding: 18px 27px;
   display: inline-block;
+  width: fit-content;
   background: var(--btn-bg);
   border: 1px solid var(--btn-bdr);
   border-radius: 9px;
@@ -435,4 +436,8 @@ body.light {
 .thoughtPhone {
   display: inline;
   z-index: 2;
+}
+
+.websites {
+  max-width: 65%;
 }
