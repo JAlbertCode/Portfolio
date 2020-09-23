@@ -18,12 +18,20 @@ const IndexPage = ({
   return (
     <Layout>
       <Helmet>
-        <title>{site.siteMetadata.title}</title>
-        <meta name="description" content={site.siteMetadata.description} />
+        <title className="animate__animated animate__fadeIn">
+          {site.siteMetadata.title}
+        </title>
+        <meta
+          name="description"
+          content={site.siteMetadata.description}
+          className="animate__animated animate__fadeIn"
+        />
       </Helmet>
       <HeroHeader />
-      <h2>Projects &darr;</h2>
-      <div className="grids">{Posts}</div>
+      <h2 className="grids animate__animated animate__bounce">
+        Projects &darr;
+      </h2>
+      <div className="grids animate__animated animate__fadeIn">{Posts}</div>
     </Layout>
   )
 }
