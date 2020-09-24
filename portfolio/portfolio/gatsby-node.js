@@ -26,6 +26,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const gracePotterTemplate = path.resolve(
     `src/templates/gracePotterTemplate.js`
   )
+  const werewolfTemplate = path.resolve(`src/templates/werewolfTemplate.js`)
 
   const result = await graphql(`
     {
@@ -106,6 +107,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       createPage({
         path: node.frontmatter.path,
         component: wixTemplate,
+        context: {} // additional data can be passed via context
+      })
+    } else if (node.frontmatter.path === "/werewolf") {
+      createPage({
+        path: node.frontmatter.path,
+        component: werewolfTemplate,
         context: {} // additional data can be passed via context
       })
     } else {

@@ -8,3 +8,4 @@ metaDescription: A platform to connect mobile vendors to potential customers.
 ---
 
 <h1>Mobile Vendor</h1>
+<p></p>
