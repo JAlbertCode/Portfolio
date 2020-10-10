@@ -27,6 +27,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     `src/templates/gracePotterTemplate.js`
   )
   const werewolfTemplate = path.resolve(`src/templates/werewolfTemplate.js`)
+  const mobileVendorTemplate = path.resolve(
+    `src/templates/mobileVendorTemplate.js`
+  )
 
   const result = await graphql(`
     {
@@ -91,7 +94,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     //     context: {} // additional data can be passed via context
     //   })
     // }
-    else if (node.frontmatter.path === "/blotto") {
+    else if (node.frontmatter.path === "/mobile-vendor") {
+      createPage({
+        path: node.frontmatter.path,
+        component: mobileVendorTemplate,
+        context: {} // additional data can be passed via context
+      })
+    } else if (node.frontmatter.path === "/blotto") {
       createPage({
         path: node.frontmatter.path,
         component: blottoTemplate,
