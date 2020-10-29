@@ -50,7 +50,7 @@ export default function mobileVendorTemplate({
               development.
             </p>
             <div className="center blog-post-container heading">
-              <video src="/assets/Mobile Vendor.mp4" autoplay controls />
+              <video src="/assets/Mobile_Vendor.mp4" autoplay controls />
             </div>
             <h1 className="heading">Toyota's Vision</h1>
             <p>
