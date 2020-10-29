@@ -35,26 +35,44 @@ export default function mobileVendorTemplate({
             </div>
           )}
           <div className="blog-post-content">
-            <h1>Mobile Vendor</h1>
+            <h1>The On-Demand Economy</h1>
             <p>
-              While searching for my next career, I reached out to a few friends
-              and family letting everyone know that I was open to new
-              opportunities. During that time, a friend connected me with a
-              couple of businesses that were looking to create websites for
-              their services. The following are the businesses I worked with and
-              the websites I delivered using wix website builder.
+              Consumers are increasingly expecting an on demand experience for
+              every product and service they engage with. Amazon set the tone
+              for 2 day deliveries for products and is working on reducing turn
+              around time from days to hours. To deliver products and services
+              within hours of request, companies will begin to manage mobile
+              distribution centers and mobile service providers.
             </p>
-          </div>
-          <div className="center blog-post-container heading">
-            {/* <video src="https://youtu.be/XmoPQuMlOYE" autoplay controls /> */}
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/XmoPQuMlOYE"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            />
+            <h1>Application Preview</h1>
+            <p>
+              The following preview is the product of a week of research and
+              development.
+            </p>
+            <div className="center blog-post-container heading">
+              <video src="/assets/Mobile Vendor.mp4" autoplay controls />
+            </div>
+            <h1 className="heading">Toyota's Vision</h1>
+            <p>
+              Toyota is already anticipating mobile distributon centers and
+              mobile service providers. The video below shares the full vision
+              of a Mobile Electronic Marketplace (MEM).
+            </p>
+            <div className="center blog-post-container heading">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/XmoPQuMlOYE"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              />
+            </div>
+            <p className="heading">
+              As several companies work on autonomous vehicles I see an
+              opportunity to spring up a third party service that can be
+              deployed now and can integrate with future autonomous systems.
+            </p>
           </div>
         </article>
       </div>
