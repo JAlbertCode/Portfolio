@@ -60,7 +60,14 @@ export default function fourthBranchTemplate({
               desktops.
             </p>
 
-            <video src="/assets/the-fourth-branch-review.mp4" controls />
+            <div class="center">
+              <video
+                src="/assets/the-fourth-branch-review.mp4"
+                width="100%"
+                height="100%"
+                controls
+              />
+            </div>
           </div>
         </article>
       </div>

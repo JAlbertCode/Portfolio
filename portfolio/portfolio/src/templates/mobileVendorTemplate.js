@@ -50,7 +50,13 @@ export default function mobileVendorTemplate({
               development.
             </p>
             <div className="center blog-post-container heading">
-              <video src="/assets/Mobile_Vendor.mp4" autoplay controls />
+              <video
+                src="/assets/Mobile_Vendor.mp4"
+                width="100%"
+                height="100%"
+                autoplay
+                controls
+              />
             </div>
             <h1 className="heading">Toyota's Vision</h1>
             <p>
@@ -59,13 +65,12 @@ export default function mobileVendorTemplate({
               of a Mobile Electronic Marketplace (MEM).
             </p>
             <div className="center blog-post-container heading">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/XmoPQuMlOYE"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+              <video
+                src="/assets/Toyota.mp4"
+                width="100%"
+                height="100%"
+                autoplay
+                controls
               />
             </div>
             <p className="heading">

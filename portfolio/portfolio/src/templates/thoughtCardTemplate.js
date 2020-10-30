@@ -35,8 +35,8 @@ export default function thoughtCardTemplate({
             </div>
           )}
           <div className="blog-post-content">
-            <div className="row margin">
-              <div className="column">
+            <div>
+              <div>
                 <h1>Augmented Business Card</h1>
 
                 <p>
@@ -56,21 +56,14 @@ export default function thoughtCardTemplate({
                   viewers who bought the book.
                 </p>
               </div>
-              {/* <img
-                src="/assets/pixel.png"
-                className="thoughtPhone"
-                width="60%"
-                height="60%"
-                display="inline"
-              /> */}
-              <video
-                src="/assets/thought-card.mp4"
-                width="40%"
-                height="40%"
-                autoplay
-                controls
-                className="margin"
-              />
+              <div className="center">
+                <video
+                  src="/assets/thought-card2.mp4"
+                  width="100%"
+                  height="100%"
+                  controls
+                />
+              </div>
             </div>
           </div>
         </article>
